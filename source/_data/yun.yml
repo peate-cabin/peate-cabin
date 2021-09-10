@@ -1,0 +1,244 @@
+avatar:
+  enable: true
+  url: /images/peate3.jpg # 你的头像图片地址
+  # If true, the avatar would be dispalyed in circle.
+  rounded: true
+  # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
+  opacity: 1
+  mickey_mouse: true
+  status:
+    enable: true
+    emoji: 😊
+    message: 只有对社会没用的人才上班！
+
+colors:
+  primary: "#000000"
+
+# UI
+banner:
+  enable: true
+  title: 上官铁柱的小屋
+  src: /js/ui/banner.js
+  border: true
+  cloud:
+    enable: true
+    color: "3DCEB5"
+  go_down:
+    enable: true
+    icon: icon-arrow-down-s-line
+
+#背景图片
+bg_image:
+  enable: true
+  url: /images/peate2.png # recomend image related to your mode
+  dark: /images/peate5.jpg
+  # blur: 30px
+  opacity: 1
+
+
+# Social Links.
+social:
+  - name: 聊个五毛钱的天？
+    # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
+    link: tencent://message/?uin=2296589177&Site=&Menu=yes
+    icon: icon-qq-line
+    color: "#12B7F5"
+  - name: peate的GitHub
+    link: https://github.com/yzy717
+    icon: icon-github-line
+    color: "#6e5494"
+  - name: 微博
+    link: https://weibo.com/6208236773/fans?topnav=1&wvr=6&mod=message&need_filter=1
+    icon: icon-weibo-line
+    color: "#E6162D"
+  - name: 网易云音乐
+    link: https://music.163.com/#/user/home?id=112301423
+    icon: icon-netease-cloud-music-line
+    color: "#C20C0C"
+  # - name: POPI
+  #   link: https://www.popiapp.cn/elpsycn
+  #   icon: icon-questionnaire-line
+  #   color: "#525252"
+  - name: 微信二维码
+    link: /images/peate4.jpg
+    icon: icon-wechat-2-line
+    color: "#1AAD19"
+  # - name: Telegram
+  #   link: https://t.me/YunYouJun
+  #   icon: icon-telegram-line
+  #   color: "#0088CC"
+  - name: 小火车
+    link: https://travellings.link
+    icon: icon-train-line
+    color: black
+
+
+# notice pin board
+notice:
+  enable: true
+  content: 欢迎来到上官铁柱的世界,我娇贵的小公主！
+
+# mode: light | dark | auto | time
+mode: auto
+
+# search
+search:
+  modal: false
+  bg_image: /images/peate5.jpg
+  dark_bg_image: /images/peate5.jpg
+  placeholder: 檢索...
+
+#engine_search:
+#  enable: false
+#  href: "https://www.google.com/search?q=site:"
+#  # href: "https://www.baidu.com/s?wd=site:"
+#  # href: "https://www.bing.com/search?q=site:"
+#  domain: yunyoujun.cn
+
+# https://github.com/wzpan/hexo-generator-search
+local_search:
+  enable: true
+  src: /js/search/local-search.js
+
+# https://github.com/oncletom/hexo-algolia
+#algolia_search:
+#  enable: false
+#  src: /js/search/algolia-search.js
+#  hits:
+#    per_page: 10 # the number of search results per page
+
+#评论模块
+
+# https://github.com/qrohlf/trianglify随机多边形背景
+trianglify:
+  enable: false
+  cell_size: 75
+  width: 800
+  height: 600
+  # https://github.com/qrohlf/trianglify/blob/master/src/utils/colorbrewer.js
+  palette: '["YlGnBu", "GnBu", "Purples", "Blues"]'
+  opacity: 0.5
+
+#s鼠标
+cursor:
+  enable: true
+  default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
+  pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur
+  text: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur
+
+# Posts / Categories / Tags in sidebar.
+sidebar:
+  src: /js/sidebar.js
+  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn@master/img/bg/alpha-stars-timing-1.webp
+  # dark_bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn@master/img/bg/dark-alpha-stars-timing-1.webp
+  bg_position: bottom 1rem center
+  tagcloud:
+    enable: true
+    amount: 20
+
+# main menu navigation  头像下菜单
+menu:
+  home:
+    path: /
+    icon: icon-home-4-line
+  list:
+    - type: archives
+      path: /archives/
+      icon: icon-archive-line
+    - type: categories
+      path: /categories/
+      icon: icon-folder-2-line
+    - type: tags
+      path: /tags/
+      icon: icon-price-tag-3-line
+  custom:
+    title: 文档
+    path: https://yun.yunyoujun.cn
+    icon: icon-settings-line
+
+# Extra links 友情链接
+pages:
+#  - name: 我的小伙伴们
+#    url:
+#    icon: icon-genderless-line
+#    color: dodgerblue
+
+# post_card 文章卡片透明度
+post_card:
+  opacity: 0.3
+
+# Post meta display settings 发表文章显示详细信息
+post_meta:
+  item_text: true
+  created_at: true
+  updated_at: true
+  categories: true
+  tags: true
+
+#编辑
+post_edit:
+  enable: true
+  url: https://github.com/yzy717/yzy717.github.io/tree/main/source/ # Link for view source.  你源码仓库
+
+# Reward (Donate) 打赏
+# If enable true, reward would be displayed in every posts and pages by default.
+# You can show or hide reward in a specific page throuth `reward: true | false` in Front Matter.
+reward:
+  enable: true
+  icon: icon-hand-coin-line
+  comment: 要是觉得不错，手留余香！
+  # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
+  methods:
+    - name: 微信支付
+      path: /images/weixin.jpg
+      color: "#2DC100"
+      icon: icon-wechat-pay-line
+
+#起始年份
+footer:
+  since: 2021
+  icon:
+    name: icon-cloud-line
+    animated: true
+    color: "#0078E7"
+    url: span
+    title: 小可爱一玫
+  beian:
+    enable: true
+    icp: 还没有备案号（不慌）
+  live_time:
+    enable: true
+    prefix: 本博客已帅气地运行
+    suffix: (●'◡'●)
+    start_time: "2021-09-09T00:00:00"
+
+#音乐播放器
+aplayer:
+  global: true
+  meting: true
+  # https://github.com/metowolf/MetingJS/tree/v1.2#option
+  widget:
+    enable: true
+    autoplay: true
+    loop: all
+    order: list
+    preload: auto
+    volume: 0.7
+    mutex: true
+    lrcType: 0
+    listFolded: false
+    listMaxHeight: 340px
+    audio:
+      - name: 星宿计时
+        artist: 杉田朗/洛天依
+        url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/audio/star-timer.mp3
+        cover: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg
+    meting:
+      enable: true
+      id: 6813805549
+      server: netease
+      type: playlist
+
+pjax:
+  enable: true
+  src: /js/pjax.js
